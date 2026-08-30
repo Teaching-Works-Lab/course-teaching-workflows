@@ -1,0 +1,36 @@
+{
+  "name": "course-teaching-workflows",
+  "version": "0.1.0",
+  "description": "Build reusable course foundations, assessment plans, and standards-compliant university syllabus documents.",
+  "author": {
+    "name": "Teaching Works Lab",
+    "url": "https://github.com/Teaching-Works-Lab"
+  },
+  "homepage": "https://github.com/Teaching-Works-Lab/course-teaching-workflows",
+  "repository": "https://github.com/Teaching-Works-Lab/course-teaching-workflows",
+  "license": "MIT",
+  "keywords": [
+    "teaching",
+    "syllabus",
+    "assessment",
+    "course-design"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Course Teaching Workflows",
+    "shortDescription": "Build course foundations, assessment plans, and syllabus documents.",
+    "longDescription": "Create reusable course knowledge, design or review assessment plans, and draft, review, or compile standards-compliant university course syllabi.",
+    "developerName": "Teaching Works Lab",
+    "category": "Education",
+    "capabilities": [
+      "Build reusable course foundations",
+      "Design and review course assessment plans",
+      "Draft, review, and compile course syllabi"
+    ],
+    "defaultPrompt": [
+      "Build a reusable foundation from these course materials.",
+      "Review this course assessment plan against its learning goals.",
+      "Draft or compile a standards-compliant course syllabus."
+    ]
+  }
+}

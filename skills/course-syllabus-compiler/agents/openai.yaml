@@ -1,0 +1,4 @@
+interface:
+  display_name: "课程大纲编译器"
+  short_description: "建立、续写、审查和编译课程大纲，并按需生成符合样板的标准 Word 文档"
+  default_prompt: "Use $course-syllabus-compiler to draft, review, or compile this course syllabus."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "课程基座构建器"
+  short_description: "从培养方案与课程资料建立可复用、可追溯并可供下游使用的课程基座"
+  default_prompt: "Use $course-foundation-builder to build a reviewable course foundation from the provided materials."
