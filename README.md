@@ -2,6 +2,8 @@
 
 A public Codex plugin for building reusable course evidence, assessment plans, and standards-compliant university course syllabi without forcing every request through one fixed pipeline.
 
+This is the core course-development plugin in the [Teaching Works Lab Skill ecosystem](https://github.com/Teaching-Works-Lab). Professional training-program data, exam Word processing, and assessment-material archiving remain optional, independently installed companions.
+
 The plugin contains three independently callable Skills:
 
 - `course-foundation-builder` converts and synthesizes PPT, Word, PDF, Markdown,教材,教案,培养方案 data, and reference syllabi into a reusable `course-foundation.md`.
@@ -10,6 +12,17 @@ The plugin contains three independently callable Skills:
 
 ## Install
 
+Recommended: add the organization Marketplace and install this plugin selectively:
+
+```text
+codex plugin marketplace add Teaching-Works-Lab/.github
+codex plugin add course-teaching-workflows@teaching-works-lab
+```
+
+Adding the Marketplace does not install every Teaching Works Lab plugin. This installation exposes only the three bundled Skills below; optional companion plugins and generated professional data Skills are not installed silently.
+
+The repository can also be installed directly:
+
 Install the public repository as a Codex plugin:
 
 ```text
@@ -17,6 +30,8 @@ https://github.com/Teaching-Works-Lab/course-teaching-workflows
 ```
 
 One installation exposes all three Skills. They may call one another conditionally, but none requires a fixed Task 1 → Task 2 → Task 3 sequence.
+
+Explicit triggers are `$course-foundation-builder`, `$course-assessment-planner`, and `$course-syllabus-compiler`.
 
 ## Typical routes
 
