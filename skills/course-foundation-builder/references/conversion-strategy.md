@@ -17,7 +17,14 @@ Pandoc is not a PDF reader. Do not build an unconditional MarkItDown-to-Pandoc f
 
 ## Cache contract
 
-`update_markdown_cache.ps1` accepts `-SourceRoot`, `-CacheRoot`, optional tool paths, `-Force`, and `-Json`. It writes:
+`scripts/update_markdown_cache.py` is the sole authority for cache semantics, command behavior, manifest fields, and exit codes. It accepts `--source-root`, `--cache-root`, optional tool commands, `--force`, and `--json`.
+
+The checked-in adapters are convenience entry points to that Python core:
+
+- Windows PowerShell: `scripts/update_markdown_cache.ps1`
+- Linux/macOS Shell: `scripts/update_markdown_cache.sh`
+
+They locate Python and forward arguments; they do not define a separate cache contract. The core writes:
 
 ```text
 _markdown_cache/

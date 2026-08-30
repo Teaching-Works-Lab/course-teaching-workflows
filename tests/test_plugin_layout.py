@@ -12,7 +12,7 @@ def test_manifest_exposes_three_skills():
         (ROOT / ".codex-plugin" / "plugin.json").read_text(encoding="utf-8")
     )
     assert manifest["name"] == "course-teaching-workflows"
-    assert manifest["version"] == "0.1.0"
+    assert manifest["version"] == "0.2.0"
     assert manifest["skills"] == "./skills/"
 
     expected = {

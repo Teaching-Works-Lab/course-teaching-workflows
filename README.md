@@ -47,13 +47,28 @@ course-package/
 
 ## Reusable tools
 
-Convert local sources once and reuse unchanged Markdown:
+Convert local sources once and reuse unchanged Markdown. Invoke the Python core directly on any supported platform:
+
+```bash
+python skills/course-foundation-builder/scripts/update_markdown_cache.py \
+  --source-root <source-directory> --cache-root <cache-directory>
+```
+
+On Windows, the PowerShell adapter forwards to the same core:
 
 ```powershell
-pwsh skills/course-foundation-builder/scripts/update_markdown_cache.ps1 `
-  -SourceRoot <source-directory> `
-  -CacheRoot <cache-directory>
+./skills/course-foundation-builder/scripts/update_markdown_cache.ps1 `
+  -SourceRoot <source-directory> -CacheRoot <cache-directory>
 ```
+
+On Linux or macOS, use the Shell adapter:
+
+```sh
+./skills/course-foundation-builder/scripts/update_markdown_cache.sh \
+  --source-root <source-directory> --cache-root <cache-directory>
+```
+
+PowerShell is the Windows adapter, not the workflow definition. The Python core defines cache behavior; both adapters only select the platform-native entry point.
 
 Check a working syllabus:
 
