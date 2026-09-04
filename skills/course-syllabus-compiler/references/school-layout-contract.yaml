@@ -1,0 +1,60 @@
+contract_version: 1
+page:
+  width_twip: 11906
+  height_twip: 16838
+  top_margin_twip: 1417
+  bottom_margin_twip: 1417
+  left_margin_twip: 1418
+  right_margin_twip: 1418
+  header_distance_twip: 851
+  footer_distance_twip: 992
+typography:
+  title:
+    size_pt: 16
+    chinese_font: 黑体
+    latin_font: Times New Roman
+    bold: true
+    alignment: center
+  level1_heading:
+    size_pt: 14
+    chinese_font: 黑体
+    latin_font: Times New Roman
+    bold: true
+  level2_heading:
+    size_pt: 12
+    chinese_font: 宋体
+    latin_font: Times New Roman
+    bold: true
+  body:
+    size_pt: 10.5
+    chinese_font: 宋体
+    latin_font: Times New Roman
+  table_body:
+    preferred_size_pt: 9
+    minimum_size_pt: 8
+basic_info:
+  rows: 12
+  columns: 8
+  grid_twip: [1931, 1634, 1215, 1104, 477, 627, 1033, 1033]
+  course_intro_inside_table: true
+  hours_use_two_row_header: true
+goals:
+  columns: 3
+  grid_twip: [1050, 4650, 3354]
+  logical_headers:
+    - 课程总目标
+    - 课程子目标（参考学校定位、培养目标、毕业要求）
+    - 达成方法
+teaching:
+  columns: 5
+  grid_twip: [1300, 1900, 600, 4000, 1254]
+  logical_headers: [单元标题, 教学内容, 学时, 课程要求, 课程目标]
+assessment:
+  dynamic_columns: true
+  weights_total: 100
+compatibility:
+  ooxml_width_unit: twip
+  target_editors: [Microsoft Word, WPS Writer]
+  chinese_body_font: 宋体
+  chinese_heading_font: 黑体
+  latin_font: Times New Roman
