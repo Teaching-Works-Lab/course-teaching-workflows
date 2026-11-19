@@ -10,6 +10,19 @@ The plugin contains three independently callable Skills:
 - `course-assessment-planner` designs, extracts, or reviews a course-specific `assessment-plan.md` with weights, goal/unit coverage, rubrics, and evidence requirements.
 - `course-syllabus-compiler` provides an AI-friendly Markdown contract, deterministic checks, and clean DOCX compilation based on an annotated university syllabus format.
 
+## WorkBuddy 安装（Skill）
+
+本仓库是 3 个独立 Skill 的捆绑包，Codex 走 Plugin / Marketplace，WorkBuddy 直接安装三个子目录：
+
+```bash
+git clone https://github.com/Teaching-Works-Lab/course-teaching-workflows.git
+cp -r course-teaching-workflows/skills/course-foundation-builder ~/.workbuddy/skills/
+cp -r course-teaching-workflows/skills/course-assessment-planner ~/.workbuddy/skills/
+cp -r course-teaching-workflows/skills/course-syllabus-compiler ~/.workbuddy/skills/
+```
+
+三个 Skill 各自带 `SKILL.md`，安装后可用 `@skill:course-foundation-builder`、`@skill:course-assessment-planner`、`@skill:course-syllabus-compiler` 分别调用；Word 编译相关依赖见各 Skill 说明。WorkBuddy 不使用 Codex Marketplace，两种方式可并存，互不干扰。
+
 ## Install
 
 Recommended: add the organization Marketplace and install this plugin selectively:
